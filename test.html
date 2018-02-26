@@ -1,0 +1,39 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+
+<style>input.invalid {
+        border-color: #DD2C00;
+}</style>
+</head>
+<body>
+
+
+
+<form id="form" action="test.php" method="POST">
+<input type="text" name="email" id="Email" pattern="(\W|^)[\w.\-]{0,25}@(yahoo|hotmail|gmail)\.com(\W|$)" required>
+<input type="submit" id="btnSubmit" name="download_submit" value="Submit">
+</form>
+<script type="text/javascript" src="js/test.js">
+/*input.oninvalid = function(event) {
+    event.target.setCustomValidity('We only support gmail, yahoo, hotmail only....');
+}*/
+</script>
+<!--<script type="text/javascript">
+$(document).ready(function(e){
+ $('#btnSubmit').click(function(){ 
+ var email = $('#Email').val();
+ var reg = /^([\w-\.]+@(?!gmail.com)(?!yahoo.com)(?!hotmail.com)(?!yahoo.co.in)(?!aol.com)(?!abc.com)(?!xyz.com)(?!pqr.com)(?!rediffmail.com)(?!live.com)(?!outlook.com)(?!me.com)(?!msn.com)(?!ymail.com)([\w-]+\.)+[\w-]{2,4})?$/;
+  if (reg.tests(email)){
+ return 0;
+ }
+ else{
+ alert('Please Enter Business Email Address');
+ return false;
+ }
+ });
+});
+</script>-->
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Win A Prize</title>
+
+  <!-- CSS  -->
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+    <div class="container">
+      <br><br>
+	  <h1 class="header center orange-text">Pick a Prize</h1>
+	  
+	  <form id='form' class='container' action='save.php' method='post'  >
+		<p>
+			<input type="radio" name="prize" value="phone" id='phone' checked>
+			<label for='phone'>Samsung Phone </label>
+		</p>
+		<p>
+			<input type="radio" name="prize" value="gen" id='gen'>
+			<label for='gen'> Generator(I better pass my neighbour) </label>
+		</p>
+		<p>
+			<input type="radio" name="prize" value="fridge" id='fridge'>
+			<label for='fridge'> Refrigerator </label>
+		</p>
+		
+		<br><br>
+		Name:<input type="text" name='user_name' placeholder='Add' required> <br>
+		<p>Email:</p>
+		<input id= 'Email' type="email" name='user_email' placeholder='Add' pattern="(\W|^)[\w.\-]{0,25}@(yahoo|hotmail|gmail)\.com$" required> <br>
+		Referral ID: <input type="text" name='referral' placeholder='Who referred You' >
+		<input type='submit' value='Win your prize' name='submit' class="btn-large waves-effect waves-light orange">
+	  </form>   
+<script type="text/javascript" src="js/test.js"></script>	  
+	  </div>
+	  
+	  <br><br><br>
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Powered by <span class="orange-text text-lighten-3">Materialize</span>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
